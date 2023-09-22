@@ -26,6 +26,12 @@ class Rectangle(Shape):
         self.__width = x
         self.__height = y
 
+    def get_width(self):
+        return self.__width
+
+    def get_height(self):
+        return self.__height
+
     def area(self):
         return self.__width * self.__height
 
