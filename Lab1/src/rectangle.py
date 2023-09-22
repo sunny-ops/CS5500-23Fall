@@ -5,13 +5,29 @@
  Note that there is no constructor or destructor,
  so a default one will be created for us.
 """
-class Rectangle:
+
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
     def set_values(self, x, y):
-        self.width = x
-        self.height = y
+        pass
+    
+    @abstractmethod
+    def area(self):
+        pass
+
+class Rectangle(Shape):
+    def __init__(self):
+        self.__width = None
+        self.__height = None
+        
+    def set_values(self, x, y):
+        self.__width = x
+        self.__height = y
 
     def area(self):
-        return self.width * self.height
+        return self.__width * self.__height
 
 
 if __name__ == "__main__":
@@ -23,4 +39,3 @@ if __name__ == "__main__":
 
     # Print out the area function
     print("area:", rect.area())
-    print("ok")
