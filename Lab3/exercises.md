@@ -29,7 +29,8 @@ Update your answers to the following questions, make sure to commit this file an
   Hint: Look at Lecture 3 slides for an example of creating a Singleton in Python
 
 1. Are singleton's in Python thread safe? Why or why not?
-   
+
+
    Singleton is not safe in Python thread.
    The typical Singleton pattern in Python checks if an instance already exists, and if not, creating one. When you have multiple threads, threads could simultaneously determine that an instance doesn't exist and then proceed to create an instance, leading to multiple instances, thereby violating the Singleton principle.
 
