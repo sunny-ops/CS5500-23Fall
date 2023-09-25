@@ -7,9 +7,10 @@ Answer and complete the following exercises.
 1. How you name functions and member functions matter. Take a look at the [dictionary](https://docs.python.org/3/library/stdtypes.html#typesmapping) 
   and [list](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range) member functions in the SL. 
   Do the names of the member functions correlate to what they do? That is, are they good 'verbs' where the name of the function describes the action the code is doing? A good example would be a function called 'pop' which only removes one element. A bad example would be a function called 'pop' where one element is removed **and** that value is returned. A better name would be 'popAndGet' or 'popAndReturn', which captures the two events happening.
+
 Answer: Functions for [lists](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range) and [dictionaries](https://docs.python.org/3/library/stdtypes.html#typesmapping) are generally intuitively named, reflecting their core actions. For example, `list.append(x)` clearly signifies adding an item to the end of the list. However, some method names, like `list.pop()`, which both removes and returns an element, might seem ambiguous to those unfamiliar with traditional computer science terminologies. While 'popAndReturn' would be more descriptive, established naming conventions often prioritize historical context and widespread familiarity.
 
-2. How does a dictionary differ from a list? (i.e. What is the underlying data structure of each container.)
+3. How does a dictionary differ from a list? (i.e. What is the underlying data structure of each container.)
 
   Answer: dictionary stores key-value pairs, while list stores individual elements
 
