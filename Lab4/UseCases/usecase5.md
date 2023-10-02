@@ -5,21 +5,20 @@
 # Use Case 5
 
 <hr>
-
-**Use Case**: Program Termination
+**Use Case**:Program Termination
 
 **Primary Actor**: User
 
 **Goal in Context**: To terminate the execution of the program.
 
-**Preconditions**: The program must be running and in a responsive state.
+**Preconditions**: The mini-paint application is open and in focus.
 
 **Trigger**: (1) Pressing the escape key. (2) Hitting the 'x' in the titlebar if avilable.
-  
+
 **Scenario 1**: A user will press the escape key when they are done painting.
 
 **Scenario 2**: A user will drag their mouse to the top-right corner of the titlebar and left-click to exit the program.
- 
+
 **Exceptions**: The program may become potentially unresponsive. In this case, the program can be terminated from the operating system.
 
 **Priority**: High-priority.

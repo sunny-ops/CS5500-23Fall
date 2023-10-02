@@ -5,32 +5,36 @@
 # Use Case 2
 
 <hr>
+**Use Case**: Change Drawing Color
 
-**Use Case**: *use-case-title*
+**Primary Actor**: User
 
-**Primary Actor**: *primary-actor*
+**Goal in Context**: change the color of the drawing tool in the mini-paint application by pressing number keys 1 through 8.
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Preconditions**: The mini-paint application is open and functional.
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Trigger**: User presses one of the number keys from 1 to 8.
 
-**Trigger**: *an action or actions that initiate the scenario*
-  
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
- 
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Scenario**:
 
-**Priority**: *relative importance of this use case compared to other use cases*
+1. User decides to change color of their drawing tool
+2. User presses the appropriate number key corresponding to their desired color.
+3. The system recognizes the keypress event.
+4. The system updates the current drawing color based on the key pressed.
 
-**When available**: *the targeted release that covers this use case*
+**Exceptions**: If the user presses a number key outside of the range 1-8, the color does not change and a soft alert might notify the user of the valid range.
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Priority**: Medium
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**When available**: First release of the mini-paint application*
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channel to actor**: Direct input through the keyboard
 
-**Open Issues**: *notes, concerns, or other materials*
+**Secondary Actor**: N/A
+
+**Channels to Secondary Actors**: N/A
+
+**Open Issues**: *How the system handle keypress events outside the valid range
 
 <hr>
 

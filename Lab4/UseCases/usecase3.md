@@ -5,32 +5,36 @@
 # Use Case 3
 
 <hr>
+**Use Case**: Clear Canvas with Space Key
 
-**Use Case**: *use-case-title*
+**Primary Actor**: User
 
-**Primary Actor**: *primary-actor*
+**Goal in Context**: To quickly clear the entire drawing canvas and fill it with the last color the user has selected
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Preconditions**: The mini-paint application is open, the canvas has some drawings or is filled with a color
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Trigger**: presses the space key.
 
-**Trigger**: *an action or actions that initiate the scenario*
-  
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
- 
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Scenario**: 
 
-**Priority**: *relative importance of this use case compared to other use cases*
+1. User presses the space key on the keyboard.
+2. The system recognizes the space key press as a trigger to clear the canvas.
+3. The system fills the entire canvas with the last color that the user has selected, thereby overwriting all existing drawings.
+4. The canvas is updated and displayed to the user in the new solid color.
 
-**When available**: *the targeted release that covers this use case*
+**Exceptions**: If no color has been previously selected, the canvas might revert to a default color (e.g., white) or the system could notify the user to select a color first.
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Priority**: Medium
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**When available**: First Release
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channel to actor**: Keyboard input and GUI
 
-**Open Issues**: *notes, concerns, or other materials*
+**Secondary Actor**: N/A
+
+**Channels to Secondary Actors**: N/A
+
+**Open Issues**: N/A
 
 <hr>
 

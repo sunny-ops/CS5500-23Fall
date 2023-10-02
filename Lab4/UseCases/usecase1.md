@@ -5,32 +5,39 @@
 # Use Case 1
 
 <hr>
+**Use Case**:  Set Canvas Dimensions
 
-**Use Case**: *use-case-title*
+**Primary Actor**: System
 
-**Primary Actor**: *primary-actor*
+**Goal in Context**: To initialize and present the mini-paint application canvas with a specific dimension of 600 pixels in width and 400 pixels in height
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Preconditions**: The mini-paint application is being launched or reset
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Trigger**: Application start or canvas reset event
 
-**Trigger**: *an action or actions that initiate the scenario*
-  
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
- 
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Scenario**: 
 
-**Priority**: *relative importance of this use case compared to other use cases*
+1. The system initializes the mini-paint application.
+2. During initialization, the system sets the drawable canvas dimensions to 600 pixels wide and 400 pixels high.
+3. The application window adjusts to fit the canvas size while accommodating any additional UI elements.
 
-**When available**: *the targeted release that covers this use case*
+**Exceptions**: If there's a screen resolution constraint that does not permit a 600x400 window, the application should adjust accordingly
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Priority**: High
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**When available**: First Release
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channel to actor**: GUI
 
-**Open Issues**: *notes, concerns, or other materials*
+**Secondary Actor**: N/A
+
+**Channels to Secondary Actors**:  N/A
+
+**Open Issues**:  Is there a need to allow users to adjust or resize the canvas in future iterations?
+
+------
+
+This use case provides a structured description of how the canvas dimensions are set in the mini-paint application.
 
 <hr>
 
