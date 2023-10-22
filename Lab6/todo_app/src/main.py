@@ -15,8 +15,8 @@ def get_api_query(title:str):
     return {"msg": title}
 
 @app.get("/mybooks/{path_param}/")
-def get_api_path_query(path_param: str, title:str):
-    return {"msg": {"path": path_param, "title":title}}
+def get_api_path_query(path_param: str, query_param:str):
+    return {"msg": {"path": path_param, "query":query_param}}
     # return {"msg": path_param + title}
 
 
